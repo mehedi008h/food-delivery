@@ -1,0 +1,81 @@
+.resturent {
+  background-color: #fff;
+  padding: 4rem 6rem;
+
+  div {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+
+    h3 {
+      font-size: 30px;
+    }
+
+    button {
+      border: none;
+      padding: 10px 15px;
+      background-color: chocolate;
+      font-weight: bold;
+      font-size: 16px;
+      color: #fff;
+    }
+  }
+}
+.resturent_container {
+  display: flex;
+  flex-direction: row;
+  max-width: 100%;
+  position: relative;
+}
+.resturent_container_branch {
+  margin-top: 15px;
+  display: flex;
+  flex-direction: row;
+  width: max-content;
+  overflow-x: scroll;
+  -ms-overflow-style: none;
+  scrollbar-width: none;
+
+  &::-webkit-scrollbar {
+    display: none;
+  }
+
+  div {
+    display: flex;
+    flex-direction: column;
+    img {
+      height: 200px;
+      width: 300px;
+      margin: 0 1rem;
+    }
+    div {
+      display: flex;
+      flex-direction: column;
+      justify-content: space-between;
+      align-items: center;
+    }
+  }
+}
+
+.app__gallery-images_arrows {
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+
+  padding: 0 1rem;
+  position: absolute;
+  bottom: 5%;
+}
+
+.gallery__arrow-icon {
+  color: var(--black-color);
+  font-size: 2rem;
+  cursor: pointer;
+  background: var(--primary-color);
+  border-radius: 5px;
+
+  &:hover {
+    color: var(--secondary-color);
+  }
+}
