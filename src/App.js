@@ -1,6 +1,8 @@
 import "./App.scss";
+import Footer from "./components/footer/Footer";
 import Header from "./components/header/Header";
 import Banner from "./container/banner/Banner";
+import Instagram from "./container/instagram/Instagram";
 import Resturent from "./container/resturent/Resturent";
 import SearchResturent from "./container/resturent/SearchResturent";
 import Specialities from "./container/resturent/Specialities";
@@ -15,6 +17,8 @@ function App() {
       <SearchResturent />
       <Specialities />
       <WeHave />
+      <Instagram />
+      <Footer />
     </div>
   );
 }

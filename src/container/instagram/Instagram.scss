@@ -1,0 +1,64 @@
+.instagram {
+  background-color: #fff;
+  padding: 4rem 6rem;
+}
+
+.resturent_container {
+  display: flex;
+  flex-direction: row;
+  max-width: 100%;
+  position: relative;
+}
+.resturent_container_branch {
+  margin-top: 15px;
+  display: flex;
+  flex-direction: row;
+  width: max-content;
+  overflow-x: scroll;
+  -ms-overflow-style: none;
+  scrollbar-width: none;
+
+  &::-webkit-scrollbar {
+    display: none;
+  }
+
+  div {
+    position: relative;
+    transition: all 0.5s ease-in-out;
+    .insta_icon {
+      position: absolute;
+      top: 40%;
+      left: 40%;
+      display: none;
+    }
+    &:hover {
+      background-color: #fff;
+    }
+    &:hover .insta_icon {
+      display: block;
+    }
+  }
+}
+
+.app__gallery-images_arrows {
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+
+  padding: 0 1rem;
+  position: absolute;
+  bottom: 5%;
+}
+
+.gallery__arrow-icon {
+  color: var(--black-color);
+  font-size: 2rem;
+  cursor: pointer;
+  background: var(--primary-color);
+  border-radius: 5px;
+
+  &:hover {
+    color: var(--secondary-color);
+  }
+}
