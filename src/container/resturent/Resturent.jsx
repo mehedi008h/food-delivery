@@ -1,14 +1,12 @@
 import React, { useEffect, useState } from "react";
 import { BsArrowLeftShort, BsArrowRightShort } from "react-icons/bs";
 import { AiFillStar } from "react-icons/ai";
-import Rating from "react-rating";
 
 import "./Resturent.scss";
 
 const Resturent = () => {
   const scrollRef = React.useRef(null);
   const [resturent, setResturent] = useState([]);
-  console.log(resturent);
 
   // load data
   useEffect(() => {
@@ -45,8 +43,8 @@ const Resturent = () => {
                   <p>{branch?.address}</p>
                 </div>
                 <span>
-                  <AiFillStar />
-                  {branch?.rating}
+                  <AiFillStar size={20} color={"yellow"} />
+                  <p>({branch?.rating})</p>
                 </span>
               </div>
             </div>

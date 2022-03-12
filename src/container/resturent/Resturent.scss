@@ -53,6 +53,10 @@
       flex-direction: column;
       justify-content: space-between;
       align-items: center;
+      span {
+        display: flex;
+        align-items: center;
+      }
     }
   }
 }
@@ -77,5 +81,104 @@
 
   &:hover {
     color: var(--secondary-color);
+  }
+}
+
+// search resturent
+
+.search_resturent {
+  padding: 4rem 6rem;
+}
+.search_container {
+  background-color: #f2f4fa;
+  display: flex;
+  align-items: center;
+  justify-content: space-evenly;
+
+  div {
+    h3 {
+      font-family: var(--font-noto);
+      font-weight: 700;
+      font-size: 30px;
+      line-height: 70px;
+      letter-spacing: 0.1rem;
+    }
+    p {
+      font-family: var(--font-popinos);
+      width: 80%;
+      letter-spacing: 0.1rem;
+    }
+    input {
+      height: 50px;
+      padding: 0.5rem 1rem;
+      outline: 2px solid pink;
+      border: 2px solid palevioletred;
+      border-radius: 15px;
+      font-weight: 500;
+      font-size: 16px;
+    }
+    button {
+      background-color: palevioletred;
+      border: none;
+      margin-left: 20px;
+      padding: 1rem 2rem;
+      border-radius: 10px;
+      font-weight: 700;
+      color: #fff;
+      letter-spacing: 0.1rem;
+    }
+  }
+}
+
+// specialities
+.specialities {
+  padding: 1rem;
+  border: 2px solid palevioletred;
+  color: palevioletred;
+  margin: 1rem;
+  transition: all 0.3s ease-in-out;
+  &:hover {
+    border: 2px solid rgb(97, 97, 45);
+    color: rgb(97, 97, 45);
+  }
+}
+
+// we_have
+.we_have {
+  padding: 4rem 6rem;
+}
+.we_have_container {
+  background-color: #fff;
+  padding: 2rem 3rem;
+  border-radius: 20px;
+
+  display: grid;
+  grid-template-columns: 400px repeat(4, 200px);
+
+  p {
+    margin-top: 10px;
+  }
+
+  button {
+    background-color: palevioletred;
+    border: none;
+    margin-top: 20px;
+    padding: 0.8rem 2rem;
+    border-radius: 10px;
+    font-weight: bold;
+    color: #fff;
+    letter-spacing: 0.1rem;
+  }
+
+  .best_container {
+    border: 3px solid palevioletred;
+    border-radius: 50%;
+    height: 150px;
+    width: 150px;
+
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
   }
 }
